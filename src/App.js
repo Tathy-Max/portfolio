@@ -2,6 +2,10 @@ import { useState, useEffect } from 'react';
 import useMediaQuery from './hooks/useMediaQuery';
 import Navbar from './components/Navbar';
 import DotScroll from './components/DotScroll';
+import Home from './components/Home';
+import LineGradient from './components/shared/LineGradient';
+import MySkills from './components/MySkills';
+import { motion } from 'framer-motion';
 
 function App() {
 	const [selectedPage, setSelectedPage] = useState('home');
@@ -34,7 +38,25 @@ function App() {
 						setSelectedPage={setSelectedPage}
 					/>
 				)}
+				<motion.div
+					margin="0 0 -200px 0"
+					amount="all"
+					onViewportEnter={() => setSelectedPage('home')}
+				>
+					<Home setSelectedPage={setSelectedPage} />
+				</motion.div>
 			</div>
+			<LineGradient />
+			<div className="w-5/6 mx-auto md:h-full ">
+				<motion.div
+					margin="0 0 -200px 0"
+					amount="all"
+					onViewportEnter={() => setSelectedPage('skills')}
+				>
+					<MySkills />
+				</motion.div>
+			</div>
+			<LineGradient />
 		</div>
 	);
 }

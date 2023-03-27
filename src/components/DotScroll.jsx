@@ -9,7 +9,7 @@ const DotScroll = ({ selectedPage, setSelectedPage }) => {
 			<AnchorLink
 				href="#home"
 				className={`${
-					selectedPage === 'home' ? selectedStyles : 'bg-dark-grey'
+					selectedPage === 'home' ? selectedStyles : 'bg-deep-blue'
 				} w-3 h-3 rounded-full`}
 				onClick={() => setSelectedPage('home')}
 			/>
@@ -17,7 +17,7 @@ const DotScroll = ({ selectedPage, setSelectedPage }) => {
 			<AnchorLink
 				href="#skills"
 				className={`${
-					selectedPage === 'skills' ? selectedStyles : 'bg-dark-grey'
+					selectedPage === 'skills' ? selectedStyles : 'bg-deep-blue'
 				} w-3 h-3 rounded-full`}
 				onClick={() => setSelectedPage('skills')}
 			/>
@@ -25,7 +25,7 @@ const DotScroll = ({ selectedPage, setSelectedPage }) => {
 			<AnchorLink
 				href="#projects"
 				className={`${
-					selectedPage === 'projects' ? selectedStyles : 'bg-dark-grey'
+					selectedPage === 'projects' ? selectedStyles : 'bg-deep-blue'
 				} w-3 h-3 rounded-full`}
 				onClick={() => setSelectedPage('projects')}
 			/>
@@ -33,7 +33,7 @@ const DotScroll = ({ selectedPage, setSelectedPage }) => {
 			<AnchorLink
 				href="#testimonials"
 				className={`${
-					selectedPage === 'testimonials' ? selectedStyles : 'bg-dark-grey'
+					selectedPage === 'testimonials' ? selectedStyles : 'bg-deep-blue'
 				} w-3 h-3 rounded-full`}
 				onClick={() => setSelectedPage('testimonials')}
 			/>
@@ -41,7 +41,7 @@ const DotScroll = ({ selectedPage, setSelectedPage }) => {
 			<AnchorLink
 				href="#contact"
 				className={`${
-					selectedPage === 'contact' ? selectedStyles : 'bg-dark-grey'
+					selectedPage === 'contact' ? selectedStyles : 'bg-deep-blue'
 				} w-3 h-3 rounded-full`}
 				onClick={() => setSelectedPage('contact')}
 			/>
