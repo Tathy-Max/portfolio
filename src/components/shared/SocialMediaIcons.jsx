@@ -9,14 +9,6 @@ const SocialMediaIcons = () => {
 		<div className="flex justify-center md:justify-start my-10 gap-7">
 			<a
 				className="hover:opacity-50 transition duration-500"
-				href="https://www.linkedin.com/in/tathy/"
-				target="_blank"
-				rel="noreferrer"
-			>
-				<img alt="linkedin-link" src={LinkedinIcon} />
-			</a>
-			<a
-				className="hover:opacity-50 transition duration-500"
 				href="https://github.com/Tathy-Max"
 				target="_blank"
 				rel="noreferrer"
@@ -25,11 +17,29 @@ const SocialMediaIcons = () => {
 			</a>
 			<a
 				className="hover:opacity-50 transition duration-500"
+				href="https://www.linkedin.com/in/tathy/"
+				target="_blank"
+				rel="noreferrer"
+			>
+				<img alt="linkedin-link" src={LinkedinIcon} />
+			</a>
+
+			<a
+				className="hover:opacity-50 transition duration-500"
 				href="https://twitter.com/tathyanna"
 				target="_blank"
 				rel="noreferrer"
 			>
 				<img alt="twitter-link" src={TwiterIcon} />
+			</a>
+
+			<a
+				className="hover:opacity-50 transition duration-500"
+				href="https://www.instagram.com/tathyanna_maximiano/"
+				target="_blank"
+				rel="noreferrer"
+			>
+				<img alt="instagram-link" src={InstagramIcon} />
 			</a>
 			<a
 				className="hover:opacity-50 transition duration-500"
@@ -38,14 +48,6 @@ const SocialMediaIcons = () => {
 				rel="noreferrer"
 			>
 				<img alt="facebook-link" src={FacebookIcon} />
-			</a>
-			<a
-				className="hover:opacity-50 transition duration-500"
-				href="https://www.instagram.com/tathyanna_maximiano/"
-				target="_blank"
-				rel="noreferrer"
-			>
-				<img alt="instagram-link" src={InstagramIcon} />
 			</a>
 		</div>
 	);

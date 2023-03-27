@@ -15,7 +15,7 @@ const Home = ({ setSelectedPage }) => {
 			<div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
 				{isAboveLarge ? (
 					<div
-						className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[200px]
+						className="relative z-0 ml-20 before:absolute before:-top-16 before:-left-20 before:rounded-t-[200px]
             before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]"
 					>
 						<img
@@ -56,7 +56,7 @@ const Home = ({ setSelectedPage }) => {
 						</span>
 					</p>
 
-					<p className="mt-10 mb-7 text-sm text-center md:text-start">
+					<p className="mt-10 mb-7 text-md text-center md:text-start">
 						I'm a landed Canadian immigrant fast learner Junior Web Developer
 						passionate about solving problems using coding to achieve the best
 						results.
