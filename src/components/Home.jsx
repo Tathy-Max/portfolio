@@ -50,7 +50,7 @@ const Home = ({ setSelectedPage }) => {
 						Tathy {''}
 						<span
 							className="xs:relative text-deep-blue font-semibold z-20 xs:before:content-brush
-              before:absolute before:-left-[45px] before:-top-[125px] before:z-[-1]"
+              before:absolute before:-left-[8px] before:-top-[35px] before:z-[-1]"
 						>
 							Max
 						</span>
