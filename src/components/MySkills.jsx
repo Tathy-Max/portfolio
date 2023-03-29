@@ -26,7 +26,7 @@ const MySkills = () => {
 					<p className="font-playfair font-semibold text-4xl mb-5">
 						MY <span className="text-deep-blue">SKILLS</span>
 					</p>
-					<LineGradient width="w-1/3" />
+					<LineGradient width="w-1/4" />
 					<p className="mt-10 mb-7">
 						I am a fast learner by vocation and an organized and collaborative
 						team player who enjoys creating a pleasant work environment.
