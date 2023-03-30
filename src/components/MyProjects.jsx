@@ -1,41 +1,23 @@
 import LineGradient from '../components/shared/LineGradient';
 import { motion } from 'framer-motion';
-import toast, { Toaster } from 'react-hot-toast';
+import { useState } from 'react';
 
-const readMore = () => {
-	toast.custom((t) => (
-		<div
-			className={`${
-				t.visible ? 'animate-enter' : 'animate-leave'
-			} max-w-md w-full bg-white shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5`}
-		>
-			<div className="flex-1 w-0 p-4">
-				<div className="flex items-start">
-					<div className="flex-shrink-0 pt-0.5">
-						<img
-							className="h-10 w-10 rounded-full"
-							src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixqx=6GHAjsWpt9&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&w=160&h=160&q=80"
-							alt=""
-						/>
-					</div>
-					<div className="ml-3 flex-1">
-						<p className="text-sm font-medium text-gray-900">Emilia Gates</p>
-						<p className="mt-1 text-sm text-gray-500">
-							Sure! 8:30pm works great!
-						</p>
-					</div>
-				</div>
-			</div>
-			<div className="flex border-l border-gray-200">
-				<button
-					onClick={() => toast.dismiss(t.id)}
-					className="w-full border border-transparent rounded-none rounded-r-lg p-4 flex items-center justify-center text-sm font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-				>
-					Close
-				</button>
-			</div>
+const ReadMorereadLess = ({ limit, children }) => {
+	const text = children;
+	const [isReadMoreShown, setIsReadMoreShown] = useState(false);
+	const toggleBtn = () => {
+		setIsReadMoreShown((prevState) => !prevState);
+	};
+
+	return (
+		<div>
+			{isReadMoreShown ? text : text.substr(0, limit)}
+			<button className="text-fuchsia-600" onClick={toggleBtn}>
+				{' '}
+				{isReadMoreShown ? '...Read less' : '...Read more'}
+			</button>
 		</div>
-	));
+	);
 };
 
 const container = {
@@ -60,10 +42,13 @@ const Project = ({ title, subtitle, more, link }) => {
 	return (
 		<motion.div variants={projectVariant} className="relative">
 			<div className={overlayStyles}>
-				<p className="text-2xl font-opensans">{title}</p>
-				<p className="mt-3.5">{subtitle}</p>
-				<p className="mt-3.5">{more}</p>
-				<p className="mt-3.5  font-poppins text-sm rounded-sm py-3 px-5 font-semibold bg-purple-300 text-deep-blue hover:bg-purple-300 hover:text-white hover:bg-gradient-rainblue transition duration-500">
+				<p className="pt-5 text-2xl font-opensans">{title}</p>
+				<p className="mt-2 text-sm">
+					{subtitle}
+					<div>{more}</div>
+				</p>
+
+				<p className="mt-2 font-poppins text-xs rounded-sm p-2.5 font-semibold bg-purple-300 text-deep-blue hover:bg-purple-300 hover:text-white hover:bg-gradient-rainblue transition duration-500">
 					{link}
 				</p>
 			</div>
@@ -126,14 +111,15 @@ const MyProjects = () => {
 							target="blank"
 							rel="noreferrer"
 						>
-							Go to Website
+							Go to website
 						</a>
-						more={
-							<div>
-								<button onClick={readMore}>Read more</button>
-								<Toaster position="absolute bottom-9 left-9" />
-							</div>
-						}
+						more=<ReadMorereadLess limit={0}>
+							HTML, CSS, and Vanilla JavaScript to build the game without
+							additional frameworks, and applying OOP concepts and DOM
+							manipulation to make the game’s interactions. For each round,
+							functions and events are called to iterate through an array (JSON
+							file) that contains the information for all game’s songs.
+						</ReadMorereadLess>
 					></Project>
 
 					<Project
@@ -147,16 +133,55 @@ const MyProjects = () => {
 						>
 							Go to website
 						</a>
+						more=<ReadMorereadLess limit={0}>
+							Use of the external Cat Public API to retrieve all cats' breeds
+							and their relevant information. The projects' APISearch component
+							mainly dictates the logic of the matching process. All the User
+							Interface has been developed (responsively for mobile and desktop)
+							with React, and the project's CRUD schema is mainly based on the
+							consumption of data (GET) from the Cat API (manipulating JSON
+							files) and full-CRUD from/to a dedicated API which stores users'
+							replies and results.
+						</ReadMorereadLess>
 					/>
 
 					{/* ROW 2 */}
 					<Project
 						title="Project 3"
 						subtitle="The project is an e-commerce in the travel service area, focused on those who are looking for an experience beyond the traditional packages (inspired by Guess Where Trips)."
+						link=<a
+							href={'https://wtg-ecommerce.netlify.app/'}
+							className="mt-7"
+							target="blank"
+							rel="noreferrer"
+						>
+							Go to website
+						</a>
+						more=<ReadMorereadLess limit={0}>
+							Authentication and management of multiple profiles with different
+							actions and pages for admins and users were the highlights of this
+							project. The store’s shopping-cart was built using the
+							react-use-cart (a lightweight shopping cart hook). Also, the
+							project included many full-CRUDS to manage users, trips, orders.
+							The project's stack is React.js, Node.js, Express.js, MongoDB, AWS
+							Server.
+						</ReadMorereadLess>
 					/>
 					<Project
 						title="Project 4"
 						subtitle="The project is a hot site created to support and capture registrations for the annual cybersecurity event of the SOC Brazil community."
+						link=<a
+							href={'https://main.d3t11wju66tnxq.amplifyapp.com/'}
+							className="mt-7"
+							target="blank"
+							rel="noreferrer"
+						>
+							Go to website
+						</a>
+						more=<ReadMorereadLess limit={0}>
+							A single page application developed according to a figma design,
+							providing information based on a json file.
+						</ReadMorereadLess>
 					/>
 					<Project
 						title="Project 5"
