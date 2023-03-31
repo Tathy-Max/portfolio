@@ -1,7 +1,7 @@
 import LineGradient from '../components/shared/LineGradient';
 import useMediaQuery from '../hooks/useMediaQuery';
 import { motion } from 'framer-motion';
-import SkillsImg from '../assets/skills.jpg';
+import SkillsImg from '../assets/skills4.jpg';
 // import BrushGreen from '../assets/brushG.png';
 // import BrushPink from '../assets/brushPM.png';
 // import BrushYellow from '../assets/circleY.png';
@@ -62,9 +62,9 @@ const MySkills = () => {
 					}}
 				>
 					<div className="relative h-32">
-						<div className="z-10">
+						<div className="z-10 text-deep-blue">
 							<p className="font-playfair font-semibold text-5xl">01</p>
-							<p className="font-playfair font-semibold text-3xl text-deep-blue mt-3">
+							<p className="font-playfair font-semibold text-3xl mt-3">
 								Experience
 							</p>
 						</div>
@@ -129,7 +129,7 @@ const MySkills = () => {
 					}}
 				>
 					<div className="relative h-32">
-						<div className="z-10">
+						<div className="z-10 text-deep-blue">
 							<p className="font-playfair font-semibold text-5xl">03</p>
 							<p className="font-playfair font-semibold text-3xl mt-3">
 								Commitment

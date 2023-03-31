@@ -2,24 +2,6 @@ import LineGradient from '../components/shared/LineGradient';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 
-const ReadMorereadLess = ({ limit, children }) => {
-	const text = children;
-	const [isReadMoreShown, setIsReadMoreShown] = useState(false);
-	const toggleBtn = () => {
-		setIsReadMoreShown((prevState) => !prevState);
-	};
-
-	return (
-		<div>
-			{isReadMoreShown ? text : text.substr(0, limit)}
-			<button className="text-fuchsia-600" onClick={toggleBtn}>
-				{' '}
-				{isReadMoreShown ? '...Read less' : '...Read more'}
-			</button>
-		</div>
-	);
-};
-
 const container = {
 	hidden: {},
 	visible: {
@@ -36,7 +18,7 @@ const projectVariant = {
 
 const Project = ({ title, subtitle, more, link }) => {
 	const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`; //text that overlays the project image
+    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue `; //text that overlays the project image
 	const projectTitle = title.split(' ').join('-').toLowerCase();
 
 	return (
@@ -54,6 +36,24 @@ const Project = ({ title, subtitle, more, link }) => {
 			</div>
 			<img src={`../assets/${projectTitle}.png`} alt={projectTitle} />
 		</motion.div>
+	);
+};
+
+const ReadMorereadLess = ({ limit, children }) => {
+	const text = children;
+	const [isReadMoreShown, setIsReadMoreShown] = useState(false);
+	const toggleBtn = () => {
+		setIsReadMoreShown((prevState) => !prevState);
+	};
+
+	return (
+		<div>
+			{isReadMoreShown ? text : text.substr(0, limit)}
+			<button className="text-fuchsia-600" onClick={toggleBtn}>
+				{' '}
+				{isReadMoreShown ? '...Read less' : '...Read more'}
+			</button>
+		</div>
 	);
 };
 
