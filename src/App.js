@@ -7,6 +7,7 @@ import LineGradient from './components/shared/LineGradient';
 import MySkills from './components/MySkills';
 import MyProjects from './components/MyProjects';
 import Testimonials from './components/Testimonials';
+import ContactMe from './components/ContactMe';
 import { motion } from 'framer-motion';
 
 function App() {
@@ -79,6 +80,15 @@ function App() {
 				</motion.div>
 			</div>
 			<LineGradient />
+			<div className="w-5/6 mx-auto md:h-full">
+				<motion.div
+					margin="0 0 -200px 0"
+					amount="all"
+					onViewportEnter={() => setSelectedPage('contact')}
+				>
+					<ContactMe />
+				</motion.div>
+			</div>
 		</div>
 	);
 }

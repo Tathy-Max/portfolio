@@ -30,7 +30,7 @@ const Project = ({ title, subtitle, more, link }) => {
 					<div>{more}</div>
 				</p>
 
-				<p className="mt-2 font-poppins text-xs rounded-sm p-2.5 font-semibold bg-purple-300 text-deep-blue hover:bg-purple-300 hover:text-white hover:bg-gradient-rainblue transition duration-500">
+				<p className="mt-2 font-poppins text-xs rounded-sm p-2.5 font-semibold bg-purple-300 text-deep-blue  hover:text-white hover:bg-gradient-rainblue transition duration-500">
 					{link}
 				</p>
 			</div>
@@ -59,7 +59,7 @@ const ReadMorereadLess = ({ limit, children }) => {
 
 const MyProjects = () => {
 	return (
-		<section id="projects" className="pt-20 pb-24">
+		<section id="projects" className="pt-24 pb-24">
 			<motion.div
 				className="md:w-2/5 mx-auto text-center"
 				initial="hidden"
@@ -79,11 +79,7 @@ const MyProjects = () => {
 						<LineGradient width="w-1/4" />
 					</div>
 				</div>
-				<p className="mt-10 mb-10">
-					Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-					fames odio in at. At magna ornare dictum lectus. Purus massa morbi
-					purus nec eget eleifend ut elit.
-				</p>
+				<p className="mt-10 mb-10">Some of the work I've been done so far.</p>
 			</motion.div>
 
 			{/* Parent component */}
@@ -98,7 +94,7 @@ const MyProjects = () => {
 					{/* ROW 1 */}
 					<div
 						className="flex justify-center text-center items-center p-10 bg-yellow
-              max-w-[458px] max-h-[400px] text-2xl font-playfair font-semibold"
+              max-w-[558px] max-h-[400px] text-2xl font-playfair font-semibold"
 					>
 						BEAUTIFUL USER INTERFACES
 					</div>
@@ -200,7 +196,7 @@ const MyProjects = () => {
 					/>
 					<div
 						className="flex justify-center text-center items-center p-10 bg-blue
-              max-w-[458.88px] max-h-[400px] text-2xl font-playfair font-semibold"
+              max-w-[558px] max-h-[400px] text-2xl font-playfair font-semibold"
 					>
 						SMOOTH USER EXPERIENCE
 					</div>

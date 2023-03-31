@@ -9,7 +9,7 @@ import SkillsImg from '../assets/skills4.jpg';
 const MySkills = () => {
 	const isAboveLarge = useMediaQuery('(min-width: 1060px)');
 	return (
-		<section id="skills" className="pt-10 pb-24">
+		<section id="skills" className="pt-10 pb-16">
 			{/* HEADER AND IMAGE SECTION */}
 			<div className="md:flex md:justify-between md:gap-16 mt-32">
 				<motion.div
@@ -39,7 +39,7 @@ const MySkills = () => {
 							className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
               before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]"
 						>
-							<img alt="skills" className="z-10 h-72" src={SkillsImg} />
+							<img alt="skills" className="z-10 h-80" src={SkillsImg} />
 						</div>
 					) : (
 						<img alt="skills" className="z-10" src={SkillsImg} />
