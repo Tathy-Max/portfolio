@@ -1,7 +1,7 @@
 import LineGradient from '../components/shared/LineGradient';
 import useMediaQuery from '../hooks/useMediaQuery';
 import { motion } from 'framer-motion';
-import SkillsImg from '../assets/skills4.jpg';
+import SkillsImg from '../assets/skills.jpg';
 // import BrushGreen from '../assets/brushG.png';
 // import BrushPink from '../assets/brushPM.png';
 // import BrushYellow from '../assets/circleY.png';

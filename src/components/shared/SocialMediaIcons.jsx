@@ -2,7 +2,7 @@ import LinkedinIcon from '../../assets/linkedin.png';
 import TwiterIcon from '../../assets/twitter.png';
 import FacebookIcon from '../../assets/facebook.png';
 import InstagramIcon from '../../assets/instagram.png';
-import GitHubIcon from '../../assets/github.png';
+import GitHubIcon from '../../assets/gitInv.png';
 
 const SocialMediaIcons = () => {
 	return (
@@ -13,7 +13,7 @@ const SocialMediaIcons = () => {
 				target="_blank"
 				rel="noreferrer"
 			>
-				<img alt="github-link" src={GitHubIcon} />
+				<img className="h-[30px] w-[30px]" alt="github-link" src={GitHubIcon} />
 			</a>
 			<a
 				className="hover:opacity-50 transition duration-500"

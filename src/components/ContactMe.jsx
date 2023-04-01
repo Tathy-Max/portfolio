@@ -2,9 +2,8 @@ import LineGradient from '../components/shared/LineGradient';
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
 import ContactImg from '../assets/contact-image.jpeg';
-import LinkedinIcon from '../assets/linkedin.png';
 import WhatsAppIcon from '../assets/whatsapp.png';
-import EmailIcon from '../assets/email (1).png';
+import EmailIcon from '../assets/email.png';
 
 const Contact = () => {
 	const {
@@ -57,12 +56,12 @@ const Contact = () => {
 					}}
 				>
 					<div className="flex items-center p-4 bg-purple-300 z-[-1] md:w-72 sm:flex-col sm:w-full">
-						<article className="items-center hover:text-yellow">
+						<article className="items-center">
 							<img className="w-7 h-7" src={WhatsAppIcon} alt="linkedin-link" />
 							<h4 className="font-semibold">WhatsApp</h4>
-							{/* <h5>tathymax.dev@gmail.com</h5> */}
+
 							<a
-								className="text-deep-blue hover:text-yellow"
+								className="text-deep-blue hover:text-white"
 								href="https://api.whatsapp.com/send?phone=+12269980172"
 								target="_blank"
 								rel="noreferrer"
@@ -71,14 +70,14 @@ const Contact = () => {
 							</a>
 						</article>
 					</div>
-					<div className="flex items-center p-4 bg-purple-300 z-[-1] md:w-72 sm:flex-col sm:w-full">
+					<div className="flex items-center p-4 bg-yellow z-[-1] md:w-72 sm:flex-col sm:w-full">
 						<article className="items-center">
 							<img className="w-7 h-7" src={EmailIcon} alt="email-link" />
 							<h4 className="font-semibold">Email</h4>
-							{/* <h5>tathymax.dev@gmail.com</h5> */}
+
 							<a
-								className="text-deep-blue hover:text-yellow"
-								href="mailto:contato@datasec.com.br"
+								className="text-deep-blue hover:text-white"
+								href="mailto:tathymax.dev@gmail.com"
 								target="_blank"
 								rel="noreferrer"
 							>
@@ -159,7 +158,7 @@ const Contact = () => {
 						)}
 
 						<button
-							className="p-4 rounded-sm bg-yellow font-semibold text-deep-blue mt-5 hover:bg-gradient-rainblue hover:text-white transition duration-500"
+							className="p-4 rounded-sm bg-deep-blue font-semibold text-purple-300 mt-5 hover:bg-gradient-rainblue hover:text-white transition duration-500"
 							type="submit"
 						>
 							SEND ME A MESSAGE

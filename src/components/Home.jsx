@@ -3,6 +3,7 @@ import useMediaQuery from '../hooks/useMediaQuery';
 import { motion } from 'framer-motion';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Tathy from '../assets/tathy princess.JPG';
+import DR from '../components/DR';
 
 const Home = ({ setSelectedPage }) => {
 	const isAboveLarge = useMediaQuery('(min-width: 1060px)');
@@ -75,14 +76,12 @@ const Home = ({ setSelectedPage }) => {
 						visible: { opacity: 1, x: 0 },
 					}}
 				>
-					<AnchorLink
+					<div
 						className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
               hover:bg-blue hover:text-white transition duration-500"
-						onClick={() => setSelectedPage('contact')}
-						href="#contact"
 					>
-						Contact Me
-					</AnchorLink>
+						<DR />
+					</div>
 					<AnchorLink
 						className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
 						onClick={() => setSelectedPage('contact')}
