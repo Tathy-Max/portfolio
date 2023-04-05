@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Tathy from '../assets/tathy princess.JPG';
 import DR from '../components/DR';
+import DevIcons from './shared/DevIcons';
+import LineGradient from './shared/LineGradient';
 
 const Home = ({ setSelectedPage }) => {
 	const isAboveLarge = useMediaQuery('(min-width: 1060px)');
@@ -58,7 +60,10 @@ const Home = ({ setSelectedPage }) => {
 					</p>
 
 					<p className="mt-10 mb-7 text-md text-center md:text-start">
-						I'm a landed Canadian immigrant fast learner Junior Web Developer
+						I'm a landed Canadian immigrant fast learner{' '}
+						<span className="text-xl text-red font-semibold font-opensans ">
+							Junior Web Developer
+						</span>{' '}
 						passionate about solving problems using coding to achieve the best
 						results.
 					</p>
@@ -106,6 +111,8 @@ const Home = ({ setSelectedPage }) => {
 				>
 					<SocialMediaIcons />
 				</motion.div>
+				<LineGradient width="w-5/12" />
+				<DevIcons />
 			</div>
 		</section>
 	);

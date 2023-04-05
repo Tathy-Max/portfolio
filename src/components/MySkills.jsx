@@ -2,9 +2,6 @@ import LineGradient from '../components/shared/LineGradient';
 import useMediaQuery from '../hooks/useMediaQuery';
 import { motion } from 'framer-motion';
 import SkillsImg from '../assets/skills.jpg';
-// import BrushGreen from '../assets/brushG.png';
-// import BrushPink from '../assets/brushPM.png';
-// import BrushYellow from '../assets/circleY.png';
 
 const MySkills = () => {
 	const isAboveLarge = useMediaQuery('(min-width: 1060px)');
@@ -69,13 +66,6 @@ const MySkills = () => {
 							</p>
 						</div>
 						<div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
-						{/* <div className="w-1/2 md:w-3/4 h-32 absolute right-0 top-0 z-[-1]">
-							<img
-								alt="skills1"
-								className="z-10 h-60 w-60 mt-[-4.5rem] ml-[-3rem]"
-								src={BrushGreen}
-							/>
-						</div> */}
 					</div>
 					<p className="mt-5">
 						My previous experience working as a businesswoman has given me a
@@ -83,7 +73,7 @@ const MySkills = () => {
 					</p>
 				</motion.div>
 
-				{/* INNOVATIVE */}
+				{/* INNOVATION */}
 				<motion.div
 					className="md:w-1/3 mt-10"
 					initial="hidden"
@@ -99,17 +89,10 @@ const MySkills = () => {
 						<div className="z-10 text-deep-blue">
 							<p className="font-playfair font-semibold text-5xl">02</p>
 							<p className="font-playfair font-semibold text-3xl mt-3">
-								Innovative
+								Innovation
 							</p>
 						</div>
 						<div className="w-1/2 md:w-3/4 h-32 bg-purple-300 absolute right-0 top-0 z-[-1]" />
-						{/* <div className="w-1/2 md:w-3/4 h-32 absolute right-0 top-0 z-[-1]">
-							<img
-								alt="skills1"
-								className="z-10 h-60 w-60 mt-[-4.5rem] ml-[-3rem]"
-								src={BrushPink}
-							/>
-						</div> */}
 					</div>
 					<p className="mt-5">
 						I am able to maintain emotional stability, adapt and be flexible,
@@ -136,13 +119,6 @@ const MySkills = () => {
 							</p>
 						</div>
 						<div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
-						{/* <div className="w-1/2 md:w-3/4 h-32 absolute right-0 top-0 z-[-1]">
-							<img
-								alt="skills1"
-								className="z-10 h-60 w-60 mt-[-4.5rem] ml-[-3rem]"
-								src={BrushYellow}
-							/>
-						</div> */}
 					</div>
 					<p className="mt-5">
 						Being a highly motivated and passionate person about what I do, who

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Testimonials = () => {
 	return (
-		<section id="testimonials" className="pt-24 pb-16">
+		<section id="testimonials" className="pt-32 pb-16">
 			{/* HEADING */}
 			<motion.div
 				className="md:w-1/3 text-center md:text-left"
@@ -52,13 +52,13 @@ const Testimonials = () => {
 						something.
 					</p>
 					<p className="text-xs text-right pt-5">
-						Tulio Minini - FullStack Web Developer Ironhack
+						Tulio Minini - Ironhack FullStack Web Developer
 					</p>
 				</motion.div>
 
 				<motion.div
 					className="mx-auto relative bg-purple-300 max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
-            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person2 content:rounded-full"
+            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person2"
 					initial="hidden"
 					whileInView="visible"
 					viewport={{ once: true, amount: 0.5 }}
@@ -73,7 +73,7 @@ const Testimonials = () => {
 						She is a strong woman who doesn't run away from challenges.
 					</p>
 					<p className="text-xs text-right position-bottom pt-5">
-						Nina Lanes - CEO Terra Viva Uniforms
+						Nina Lanes - Terra Viva Uniforms Partner
 					</p>
 				</motion.div>
 
@@ -89,10 +89,14 @@ const Testimonials = () => {
 						visible: { opacity: 1, scale: 1 },
 					}}
 				>
-					<p className="font-playfair text-6xl">“</p>
+					{/* <p className="font-playfair text-6xl mt-5">“</p> */}
 					<p className="text-center text-xl">
-						I strongly recommend Tathyanna to anyone for the incredible, honest
-						and reliable person and professional she is.
+						<span className="font-playfair text-6xl">“</span>I strongly
+						recommend Tathyanna to anyone for the incredible, honest and
+						reliable person and professional she is.
+					</p>
+					<p className="text-xs text-right pt-5">
+						Emilia Vieira - Staples Animal Hospital Director
 					</p>
 				</motion.div>
 			</div>

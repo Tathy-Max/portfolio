@@ -39,8 +39,8 @@ module.exports = {
 			content: {
 				brush: "url('./assets/circle.png')",
 				person1: "url('./assets/tulio.png')",
-				person2: "url('./assets/nina.png')",
-				person3: "url('./assets/person-3.png')",
+				person2: "url('./assets/ninaB.jpg')",
+				person3: "url('./assets/person-3.jpeg')",
 			},
 		},
 		screens: {

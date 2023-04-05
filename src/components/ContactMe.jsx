@@ -1,7 +1,6 @@
 import LineGradient from '../components/shared/LineGradient';
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
-import ContactImg from '../assets/contact-image.jpeg';
 import WhatsAppIcon from '../assets/whatsapp.png';
 import EmailIcon from '../assets/email.png';
 
@@ -62,8 +61,8 @@ const Contact = () => {
 
 							<a
 								className="text-deep-blue hover:text-white"
-								href="https://api.whatsapp.com/send?phone=+12269980172"
-								target="_blank"
+								href={'https://api.whatsapp.com/send?phone=+12269980172'}
+								target="blank"
 								rel="noreferrer"
 							>
 								Send me a message
@@ -78,7 +77,7 @@ const Contact = () => {
 							<a
 								className="text-deep-blue hover:text-white"
 								href="mailto:tathymax.dev@gmail.com"
-								target="_blank"
+								target="blank"
 								rel="noreferrer"
 							>
 								Send me a message

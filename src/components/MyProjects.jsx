@@ -59,7 +59,7 @@ const ReadMorereadLess = ({ limit, children }) => {
 
 const MyProjects = () => {
 	return (
-		<section id="projects" className="pt-24 pb-24">
+		<section id="projects" className="pt-28 pb-24">
 			<motion.div
 				className="md:w-2/5 mx-auto text-center"
 				initial="hidden"
