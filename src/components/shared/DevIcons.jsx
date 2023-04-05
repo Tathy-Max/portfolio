@@ -11,7 +11,7 @@ import BootIcon from '../../assets/bootstrap-original.svg';
 
 const DevIcons = () => {
 	return (
-		<div className="flex justify-center md:justify-start pt-44 gap-3">
+		<div className="flex justify-center md:justify-start mt-48 gap-3">
 			<img
 				className="transition duration-500 hover:scale-150 h-[42px] w-[42px] animate-pulse"
 				src={HtmlIcon}

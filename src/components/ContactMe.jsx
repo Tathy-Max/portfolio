@@ -41,7 +41,7 @@ const Contact = () => {
 				</div>
 			</motion.div>
 
-			{/* FORM & IMAGE */}
+			{/* FORM & CONTACT */}
 			<div className="md:flex md:justify-between gap-16 mt-5 basis-1/2">
 				<motion.div
 					className="flex flex-col gap-7"
@@ -54,13 +54,13 @@ const Contact = () => {
 						visible: { opacity: 1, y: 0 },
 					}}
 				>
-					<div className="flex items-center p-4 bg-purple-300 z-[-1] md:w-72 sm:flex-col sm:w-full">
+					<div className="flex items-center p-4 bg-purple-300 md:w-72 sm:flex-col sm:w-full">
 						<article className="items-center">
 							<img className="w-7 h-7" src={WhatsAppIcon} alt="linkedin-link" />
 							<h4 className="font-semibold">WhatsApp</h4>
 
 							<a
-								className="text-deep-blue hover:text-white"
+								className="text-deep-blue hover:text-red"
 								href={'https://api.whatsapp.com/send?phone=+12269980172'}
 								target="blank"
 								rel="noreferrer"
@@ -69,13 +69,12 @@ const Contact = () => {
 							</a>
 						</article>
 					</div>
-					<div className="flex items-center p-4 bg-yellow z-[-1] md:w-72 sm:flex-col sm:w-full">
+					<div className="flex items-center p-4 bg-yellow md:w-72 sm:flex-col sm:w-full">
 						<article className="items-center">
 							<img className="w-7 h-7" src={EmailIcon} alt="email-link" />
 							<h4 className="font-semibold">Email</h4>
-
 							<a
-								className="text-deep-blue hover:text-white"
+								className="text-deep-blue hover:text-red"
 								href="mailto:tathymax.dev@gmail.com"
 								target="blank"
 								rel="noreferrer"

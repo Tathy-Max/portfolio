@@ -24,10 +24,7 @@ const Testimonials = () => {
 						<LineGradient width="w-2/5" />
 					</div>
 				</div>
-				{/* <p className="font-playfair font-semibold text-4xl mb-5 text-red">
-					TESTIMONIALS
-				</p>
-				<LineGradient width="mx-auto w-2/5" /> */}
+
 				<p className="mt-10">Here's what people are saying about my Work.</p>
 			</motion.div>
 
