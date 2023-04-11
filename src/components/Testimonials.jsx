@@ -54,7 +54,7 @@ const Testimonials = () => {
 				</motion.div>
 
 				<motion.div
-					className="mx-auto relative bg-purple-300 max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
+					className="mx-auto relative bg-purple-300 max-w-[400px] h-[350px] flex flex-col justify-end p-10 mt-48
             before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person2"
 					initial="hidden"
 					whileInView="visible"
@@ -65,17 +65,19 @@ const Testimonials = () => {
 						visible: { opacity: 1, scale: 1 },
 					}}
 				>
-					<p className="font-playfair text-6xl">“</p>
+					<p className="font-playfair text-6xl mt-5">“</p>
 					<p className="text-center text-xl">
-						She is a strong woman who doesn't run away from challenges.
+						Tathy is that rare someone who has industry expertise, boundless
+						energy, the ability to have a vision and guide any project to
+						completion.
 					</p>
-					<p className="text-xs text-right position-bottom pt-5">
+					<p className="text-xs text-right pt-5">
 						Nina Lanes - Terra Viva Uniforms Partner
 					</p>
 				</motion.div>
 
 				<motion.div
-					className="mx-auto relative bg-yellow max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
+					className="mx-auto relative bg-yellow max-w-[400px] h-[350px] flex flex-col justify-end p-10 mt-48
             before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person3"
 					initial="hidden"
 					whileInView="visible"
@@ -87,10 +89,11 @@ const Testimonials = () => {
 					}}
 				>
 					{/* <p className="font-playfair text-6xl mt-5">“</p> */}
+					<p className="font-playfair text-6xl">“</p>
 					<p className="text-center text-xl">
-						<span className="font-playfair text-6xl">“</span>I strongly
-						recommend Tathyanna to anyone for the incredible, honest and
-						reliable person and professional she is.
+						Tathyanna’s ability to go above and beyond is incredible. She has
+						long-term vision and short-term actions.
+						{/* <span className="font-playfair text-6xl">“</span> */}
 					</p>
 					<p className="text-xs text-right pt-5">
 						Emilia Vieira - Staples Animal Hospital Director
