@@ -146,7 +146,7 @@ const MyProjects = () => {
 						title="Project 3"
 						subtitle="The project is an e-commerce in the travel service area, focused on those who are looking for an experience beyond the traditional packages (inspired by Guess Where Trips)."
 						link=<a
-							href={'https://wtg-ecommerce.netlify.app/'}
+							href={'https://main.d3t11wju66tnxq.amplifyapp.com/'}
 							className="mt-7"
 							target="blank"
 							rel="noreferrer"
