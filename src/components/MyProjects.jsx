@@ -24,7 +24,7 @@ const Project = ({ title, subtitle, more, link }) => {
 	return (
 		<motion.div variants={projectVariant} className="relative">
 			<div className={overlayStyles}>
-				<p className="pt-5 text-2xl font-opensans">{title}</p>
+				<p className="pt-5 text-2xl font-opensans hidden">{title}</p>
 				<p className="mt-2 text-sm">
 					{subtitle}
 					<div>{more}</div>
@@ -110,8 +110,8 @@ const MyProjects = () => {
 							Go to website
 						</a>
 						more=<ReadMorereadLess limit={0}>
-							HTML, CSS, and Vanilla JavaScript to build the game without
-							additional frameworks, and applying OOP concepts and DOM
+							HTML, CSS, and Vanilla JavaScript were used to build the game
+							without additional frameworks. I applied OOP concepts and DOM
 							manipulation to make the game’s interactions. For each round,
 							functions and events are called to iterate through an array (JSON
 							file) that contains the information for all game’s songs.
@@ -130,8 +130,8 @@ const MyProjects = () => {
 							Go to website
 						</a>
 						more=<ReadMorereadLess limit={0}>
-							Use of the external Cat Public API to retrieve all cats' breeds
-							and their relevant information. The projects' APISearch component
+							I used an external Cat Public API to retrieve all cats' breeds and
+							their relevant information. The projects' APISearch component
 							mainly dictates the logic of the matching process. All the User
 							Interface has been developed (responsively for mobile and desktop)
 							with React, and the project's CRUD schema is mainly based on the
@@ -144,9 +144,25 @@ const MyProjects = () => {
 					{/* ROW 2 */}
 					<Project
 						title="Project 3"
-						subtitle="The project is an e-commerce in the travel service area, focused on those who are looking for an experience beyond the traditional packages (inspired by Guess Where Trips)."
+						subtitle="The project is a hot site created to support and capture registrations for the annual cybersecurity event of the SOC Brazil community."
 						link=<a
 							href={'https://main.d3t11wju66tnxq.amplifyapp.com/'}
+							className="mt-7"
+							target="blank"
+							rel="noreferrer"
+						>
+							Go to website
+						</a>
+						more=<ReadMorereadLess limit={0}>
+							It's a single page application developed according to a Figma
+							design, providing information based on a json file.
+						</ReadMorereadLess>
+					/>
+					<Project
+						title="Project 4"
+						subtitle="Where do You Wanna Go is an e-commerce for the travel service area, focused on those who are looking for an experience beyond the traditional packages (inspired by Guess Where Trips)."
+						link=<a
+							href={'https://wtg-ecommerce.netlify.app/'}
 							className="mt-7"
 							target="blank"
 							rel="noreferrer"
@@ -164,8 +180,8 @@ const MyProjects = () => {
 						</ReadMorereadLess>
 					/>
 					<Project
-						title="Project 4"
-						subtitle="The project is a hot site created to support and capture registrations for the annual cybersecurity event of the SOC Brazil community."
+						title="Project 5"
+						subtitle="SOCBrazil's website is a portal for the Brazilian cybersecurity community focused on publicizing activities such as courses, events and lives for its subscribers, while also actively recruiting new members.It provides a one-stop destination for cybersecurity enthusiasts to stay updated on the latest happenings and opportunities in the field, and offers a seamless user experience to navigate through its features and offerings."
 						link=<a
 							href={'https://main.d3t11wju66tnxq.amplifyapp.com/'}
 							className="mt-7"
@@ -175,13 +191,10 @@ const MyProjects = () => {
 							Go to website
 						</a>
 						more=<ReadMorereadLess limit={0}>
-							A single page application developed according to a figma design,
-							providing information based on a json file.
+							The portal was developed in JavaScript using Typescript, React,
+							Vite, Tailwind, Hero Icons, Framer Motion, Form Submit, and React
+							Anchor Link Smooth Scroll.
 						</ReadMorereadLess>
-					/>
-					<Project
-						title="Project 5"
-						subtitle="The “Guess the Song” is a game built as the very first project of the Ironhack Full Stack Web Development Bootcamp. The game's goal is to guess the song's names throughout hints, reaching the end of the game's fourth round, holding the maximum score as possible."
 					/>
 
 					{/* ROW 3 */}
@@ -192,7 +205,25 @@ const MyProjects = () => {
 
 					<Project
 						title="Project 7"
-						subtitle="The project is an e-commerce in the travel service area, focused on those who are looking for an experience beyond the traditional packages (inspired by Guess Where Trips)."
+						subtitle="Datasec's Website development and modernization, which involved creating a fully responsive website from scratch using React.js and CSS. The main objectives of this project were: to improve the company's online presence, clarify the main services offered by it, and provide an ideal user experience for its customers."
+						link=<a
+							href={'https://main.d3t11wju66tnxq.amplifyapp.com/'}
+							className="mt-7"
+							target="blank"
+							rel="noreferrer"
+						>
+							Go to website
+						</a>
+						more=<ReadMorereadLess limit={0}>
+							To enhance the site's functionality, I used reaction hooks, such
+							as the useState hook, to add state to a functional component. In
+							addition, the react hook form was implemented with ForSubmit to
+							assist in creating and validating the contact form, among the
+							various contact options, including WhatsApp, Email and LinkedIn
+							messsage. Also, I used the react icon library to display social
+							media icons, and SwiperJS to create customer testimonial
+							slideshows.
+						</ReadMorereadLess>
 					/>
 					<div
 						className="flex justify-center text-center items-center p-10 bg-blue
