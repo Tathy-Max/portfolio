@@ -198,13 +198,9 @@ const MyProjects = () => {
 					/>
 
 					{/* ROW 3 */}
-					<Project
-						title="Project 6"
-						subtitle="Built as the second project of the Ironhack Full Stack Web Development Bootcamp, “Catch Your Cat” allows people to find out which cat breed is more suitable to their lifestyle and personal circumstances."
-					/>
 
 					<Project
-						title="Project 7"
+						title="Project 6"
 						subtitle="Datasec's Website development and modernization, which involved creating a fully responsive website from scratch using React.js and CSS. The main objectives of this project were: to improve the company's online presence, clarify the main services offered by it, and provide an ideal user experience for its customers."
 						link=<a
 							href={'https://main.d3t11wju66tnxq.amplifyapp.com/'}
@@ -225,6 +221,8 @@ const MyProjects = () => {
 							slideshows.
 						</ReadMorereadLess>
 					/>
+					<Project title="Project 7" subtitle="COMING SOON" />
+
 					<div
 						className="flex justify-center text-center items-center p-10 bg-blue
               max-w-[558px] max-h-[400px] text-2xl font-playfair font-semibold"
